@@ -5,13 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-/**
- * The {@code LoginPage} class provides all Login page elements
- * and available methods
- *
- * @author nikitam
- * @version 1.0
- */
+
 public class LoginPage {
 
     WebDriver driver;
@@ -42,11 +36,7 @@ public class LoginPage {
         return loginButton;
     }
 
-    /**
-     * Authorize user by name and password
-     * @param username valid or invalid username for WEB page
-     * @param password valid or invalid password for WEB page
-     */
+
     public void authorize(String username, String password) {
         getUsernameField().sendKeys(username);
         getPasswordField().sendKeys(password);
